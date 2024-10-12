@@ -1,3 +1,4 @@
+import React from "react";
 import CountDownTimer from "../components/Countdown/Countdown";
 import styles from "./../sass/pages/Home.module.scss";
 import PropTypes from "prop-types";
@@ -5,7 +6,7 @@ import SubTheme from "../components/SubTheme/SubTheme";
 
 const Home = () => {
   return (
-    <>
+    <React.Fragment>
       <div className={styles.Home}>
         <div className={styles.Hero}>
           <div className={styles.title}>
@@ -76,7 +77,7 @@ const Home = () => {
       {/* Event subtheme */}
 
       <SubTheme />
-    </>
+    </React.Fragment>
   );
 };
 
